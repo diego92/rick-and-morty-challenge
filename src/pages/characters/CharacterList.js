@@ -1,3 +1,4 @@
+import { Grid } from "@mui/material";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { API_URL } from "../../utils/globals";
@@ -22,10 +23,21 @@ export const CharacterList = () => {
 
   return (
     <div>
-      {data.length > 0 &&
-        data.map((character) => (
-          <CharacterCard key={character.id} {...character} />
-        ))}
+      <Grid container spacing={4}>
+        {data.length > 0 &&
+          data.map((character) => (
+            <Grid
+              item
+              key={character.id}
+              xs={12}
+              sm={6}
+              md={4}
+              style={{ display: "flex", justifyContent: "center" }}
+            >
+              <CharacterCard {...character} />
+            </Grid>
+          ))}
+      </Grid>
     </div>
   );
 };
