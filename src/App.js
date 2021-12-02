@@ -1,7 +1,7 @@
-import { API_URL } from "./utils/globals";
+import { AppRouter } from "./routers/AppRouter";
 
 function App() {
-  return <div>App Principal</div>;
+  return <AppRouter />;
 }
 
 export default App;
