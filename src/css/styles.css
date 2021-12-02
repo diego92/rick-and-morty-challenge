@@ -1,0 +1,23 @@
+.status__badge-alive {
+  background-color: green;
+  border-radius: 25px;
+  color: white;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.status__badge-dead {
+  background-color: red;
+  border-radius: 25px;
+  color: white;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.status__badge {
+  background-color: gray;
+  border-radius: 25px;
+  color: white;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}

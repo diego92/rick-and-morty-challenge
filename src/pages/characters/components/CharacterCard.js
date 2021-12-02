@@ -5,6 +5,8 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { Divider } from "@mui/material";
+import "../../../css/styles.css";
 
 export default function CharacterCard({
   gender,
@@ -15,20 +17,37 @@ export default function CharacterCard({
 }) {
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        height="140"
-        image={image}
-        alt={image}
-      />
+      <CardMedia component="img" height="350" image={image} alt={image} />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {name}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
+        <Divider />
+        <section
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            marginTop: "1rem",
+          }}
+        >
+          <Typography variant="body2" color="text.secondary">
+            Status:{" "}
+            <span
+              className={
+                status === "Alive"
+                  ? "status__badge-alive"
+                  : status === "Dead"
+                  ? "status__badge-dead"
+                  : "status__badge"
+              }
+            >
+              {status}
+            </span>
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            Species: {species}
+          </Typography>
+        </section>
       </CardContent>
       <CardActions>
         <Button size="small">Share</Button>

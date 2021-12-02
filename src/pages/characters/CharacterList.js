@@ -23,7 +23,9 @@ export const CharacterList = () => {
   return (
     <div>
       {data.length > 0 &&
-        data.map((character) => <CharacterCard {...character} />)}
+        data.map((character) => (
+          <CharacterCard key={character.id} {...character} />
+        ))}
     </div>
   );
 };
