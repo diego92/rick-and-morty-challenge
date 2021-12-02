@@ -5,6 +5,8 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Divider } from "@mui/material";
 import "../../../css/styles.css";
+import { Link } from "react-router-dom";
+import "../../../css/styles.css";
 
 export default function CharacterCard({
   gender,
@@ -12,6 +14,7 @@ export default function CharacterCard({
   name,
   species,
   status,
+  id,
 }) {
   return (
     <Card
@@ -21,6 +24,9 @@ export default function CharacterCard({
         flexDirection: "column",
         maxWidth: 345,
       }}
+      component={Link}
+      to={`characters/${id}`}
+      className="card-character"
     >
       <CardMedia component="img" height="350" image={image} alt={image} />
       <CardContent>
