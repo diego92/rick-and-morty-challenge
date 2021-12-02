@@ -28,6 +28,7 @@ export default function CharacterCard({
             display: "flex",
             justifyContent: "space-between",
             marginTop: "1rem",
+            marginBottom: "1rem",
           }}
         >
           <Typography variant="body2" color="text.secondary">
@@ -48,11 +49,11 @@ export default function CharacterCard({
             Species: {species}
           </Typography>
         </section>
+
+        <Typography variant="body1" color="text.primary">
+          Gender: {gender}
+        </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
     </Card>
   );
 }
