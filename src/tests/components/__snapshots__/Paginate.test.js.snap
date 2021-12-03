@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <Paginate/> debe mostrarse correctamente 1`] = `
+<ForwardRef(Grid)
+  alignItems="center"
+  container={true}
+  direction="row"
+  justifyContent="center"
+  style={
+    Object {
+      "margin": "1rem",
+    }
+  }
+>
+  <ForwardRef(Stack)
+    spacing={2}
+  >
+    <ForwardRef(Pagination)
+      color="primary"
+      count={10}
+      onChange={[Function]}
+      page={3}
+    />
+  </ForwardRef(Stack)>
+</ForwardRef(Grid)>
+`;
