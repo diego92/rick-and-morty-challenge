@@ -1,5 +1,4 @@
 import * as React from "react";
-import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -32,8 +31,6 @@ export default function CharacterCardDetail({
   episodes,
   created,
 }) {
-  const theme = useTheme();
-
   return (
     <Card
       style={{ marginTop: "2rem", border: "1px solid #000", height: "80vh" }}
