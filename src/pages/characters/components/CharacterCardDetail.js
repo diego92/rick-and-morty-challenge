@@ -117,7 +117,7 @@ export default function CharacterCardDetail({
               </Typography>
               <Grid container spacing={3}>
                 {episodes.map((ep) => (
-                  <Grid item xs={4}>
+                  <Grid key={ep.name} item xs={4}>
                     <Item style={{ backgroundColor: "darkkhaki" }}>
                       {ep.name}
                     </Item>

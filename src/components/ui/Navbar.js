@@ -25,7 +25,6 @@ export const Navbar = () => {
           <MenuItem component={Link} to="/characters">
             <Typography textAlign="center">CHARACTERS</Typography>
           </MenuItem>
-          <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
     </Box>
