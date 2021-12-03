@@ -47,7 +47,7 @@ export const CharacterList = () => {
   };
 
   const handleChangePage = async (pageValue) => {
-    setPage({ ...page, pageNumber: page });
+    setPage({ ...page, pageNumber: pageValue });
     try {
       setState({ ...state, loading: true, error: false });
       const response = await axios(
@@ -59,6 +59,7 @@ export const CharacterList = () => {
     }
   };
 
+  console.log(page);
   return (
     <div>
       <Search value={charactername} handleChange={handleChangeCharacterName} />
@@ -76,7 +77,11 @@ export const CharacterList = () => {
               <CharacterCard {...character} />
             </Grid>
           ))}
-        <Paginate handleChangePage={handleChangePage} count={page.count} />
+        <Paginate
+          handleChangePage={handleChangePage}
+          count={page.count}
+          pageNumber={page.pageNumber}
+        />
       </Grid>
     </div>
   );

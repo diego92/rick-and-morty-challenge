@@ -2,7 +2,7 @@ import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import { Grid } from "@mui/material";
 
-export default function Paginate({ count, handleChangePage }) {
+export default function Paginate({ count, handleChangePage , pageNumber}) {
   const handleChangePaginate = (e, page) => {
     handleChangePage(page);
   };
@@ -20,6 +20,7 @@ export default function Paginate({ count, handleChangePage }) {
           count={count}
           color="primary"
           onChange={handleChangePaginate}
+          page={pageNumber}
         />
       </Stack>
     </Grid>
