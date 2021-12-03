@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <Navbar /> debe de mostrarse correctamente 1`] = `
+<ForwardRef(Box)
+  sx={
+    Object {
+      "flexGrow": 1,
+    }
+  }
+>
+  <ForwardRef(AppBar)
+    position="static"
+  >
+    <ForwardRef(Toolbar)>
+      <ForwardRef(Typography)
+        component={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "propTypes": Object {
+              "innerRef": [Function],
+              "onClick": [Function],
+              "replace": [Function],
+              "target": [Function],
+              "to": [Function],
+            },
+            "render": [Function],
+          }
+        }
+        style={
+          Object {
+            "color": "white",
+            "textDecoration": "none",
+          }
+        }
+        sx={
+          Object {
+            "flexGrow": 1,
+          }
+        }
+        to="/"
+        variant="h6"
+      >
+        Rick And Morty
+      </ForwardRef(Typography)>
+      <ForwardRef(MenuItem)
+        component={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "propTypes": Object {
+              "innerRef": [Function],
+              "onClick": [Function],
+              "replace": [Function],
+              "target": [Function],
+              "to": [Function],
+            },
+            "render": [Function],
+          }
+        }
+        to="/characters"
+      >
+        <ForwardRef(Typography)
+          textAlign="center"
+        >
+          CHARACTERS
+        </ForwardRef(Typography)>
+      </ForwardRef(MenuItem)>
+    </ForwardRef(Toolbar)>
+  </ForwardRef(AppBar)>
+</ForwardRef(Box)>
+`;
